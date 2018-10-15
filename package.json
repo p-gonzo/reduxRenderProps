@@ -1,0 +1,29 @@
+{
+  "name": "reduxrenderprops",
+  "version": "1.0.0",
+  "description": "Demo using Redux with Render Props",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=development --watch",
+    "start": "nodemon ./server/index.js"
+  },
+  "author": "Philip Gonzalez",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
