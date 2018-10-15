@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Mouse from './Mouse.jsx';
 import Cat from './Cat.jsx';
 
 export default class App extends Component {
@@ -20,9 +19,7 @@ export default class App extends Component {
     return (
       <div style={{height: '600px'}}>
         <h1 onClick={this.toggleHeading}>{this.state.value}</h1>
-        <Mouse render ={mouse => (
-          <Cat mouse={mouse} />
-        )} />
+        <Cat />
       </div>
     );
   }
