@@ -15,11 +15,17 @@ export default class Mouse extends Component {
   }
 
   incrementIndex = () => {
-    this.setState(prevState => ({index: prevState.index + 1}));
+    this.setState(( previousState, {limit} ) => {
+      const nextIndex = previousState.index + 1 === limit ? 0 : previousState.index + 1;
+      return {index: nextIndex}
+    });
   }
 
   decrementIndex = () => {
-    this.setState(prevState => ({index: prevState.index - 1}));
+    this.setState(( previousState, {limit} ) => {
+      const nextIndex = previousState.index - 1 < 0 ? limit - 1 : previousState.index - 1;
+      return {index: nextIndex}
+    });
   }
 
   render() {

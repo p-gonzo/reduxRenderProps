@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Cat from './Cat.jsx';
+import images from '../lib/images.js';
 
 export default class App extends Component {
   state = {
@@ -19,7 +20,7 @@ export default class App extends Component {
     return (
       <div style={{height: '600px'}}>
         <h1 onClick={this.toggleHeading}>{this.state.value}</h1>
-        <Cat />
+        <Cat images={images}/>
       </div>
     );
   }
